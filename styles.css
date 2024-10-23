@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;    
+    color: #fff;
+}
+
+/* HEADER */
+.header-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    width: 200px;
+    padding-right: 50px;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.info-container {
+    text-align: center;
+}
+
+.dates {             
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: #fffb00 2px 2px 10px;  
+}
+
+.title {    
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);  
+}
+
+.cities {    
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00bfff;
+    text-shadow: 2px 2px 8px rgba(0, 191, 255, 0.7);
+}
+
+/* MENU */
+nav.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;  
+    padding: 20px;       
+    margin-top: 3px;
+    flex-wrap: wrap;
+}
+
+nav.menu a {
+    color: #fff;
+    text-decoration: none;    
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav.menu a:hover {
+    color: #ffd700; 
+}
+
+/* ESPACIO RELOJ */
+.countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+    flex-wrap: wrap; 
+    text-align: center; 
+}
+
+.countdown-container span.text {
+    font-size: 3em; 
+    font-weight: bold;
+    color: #ffd700; 
+    text-shadow: 2px 2px 4px #fffb00;
+    margin-right: 20px;
+    text-align: center;
+    flex: 1 1 auto; 
+}
+
+.countdown {
+    width: 100%; 
+    padding-right: 0;
+    text-align: center;
+}
+/* INFORMACIÓN */
+.banner {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    opacity: 43%;
+}
+
+.banner h2 {
+    font-weight: bold;
+    font-size: 2.8em;
+    margin: 10px 0;
+    opacity: 43%;
+}
+
+.banner p {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 10px 0;
+    text-shadow: 0px 2px 4px #00c3ff;
+}
+
+/* ARTISTAS */
+.artists {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    padding: 10px;
+}
+
+.artists img {
+    width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+}
+
+
+/* TIQUETERA */
+.tiquetera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.tiquetera img {
+    width: 100%;
+    height: auto;
+}
+
+/* BOTÓN COMPRAR */
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cta a {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+.cta img {
+    width: 50px;
+    height: auto;
+    align-self: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    border-left: 1px solid white; 
+    padding-left: 20px;
+}
+
+.footer-column:first-child {
+    border-left: none;   
+    padding-left: 0; 
+}
+
+.footer-column p,
+.footer-column ul {
+    margin: 10px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+/* ARTISTAS Y HORARIOS */
+.artist-banner {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.artist-banner h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    opacity: 43%;
+}
+
+.artist-banner p {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px #ffffff; 
+}
+
+.artists-schedule {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.artist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.artist-item:hover {
+    transform: scale(1.05);
+}
+
+.artist-item img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.artist-info {
+    text-align: center;
+    color: white;
+}
+
+.artist-info h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #ffffff;
+    opacity: 100%;
+    font-style: italic;
+}
+
+.artist-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #fff;
+    text-shadow: 0px 1px 2px #000;
+}
+
+/* TICKETS */
+.concert-banner {
+    text-align: center;
+    background-color: #000000;
+    color: #ffcc00;         
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+.concert-banner h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #ffffff; 
+    text-shadow: #ffffff 2px 2px 8px;  
+}
+
+.concert-banner p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-shadow: #fffb00 2px 2px 10px;  
+}
+
+.concert-banner h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ffcc00; 
+    text-shadow: #fffb00 2px 2px 10px;  
+}
+
+/* PHOTOS */
+.gallery {
+    margin-top: 3px;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; 
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    margin-top: 40px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* ABOUT */
+.logistics-details {
+    max-width: 100%; 
+    margin: 40px auto; 
+    padding: 30px; 
+    background-color: #1a1a1a; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+    text-align: left; 
+}
+
+.section-box {
+    background-color: #222; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    max-width: 100%; 
+}
+
+.logistics-details {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.logistics-details h1 {
+    color: #ffcc00; 
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+}
+
+.logistics-details h2 {
+    color: #00bfff; 
+    font-size: 2em; 
+    margin: 10px 0; 
+}
+
+.logistics-details ul {
+    list-style-type: none; 
+    padding: 0; /
+}
+
+.logistics-details li {
+    margin-bottom: 15px; 
+    color: #fff; 
+    line-height: 1.6; 
+}
+
+.logistics-details strong {
+    color: #ffd700; 
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    /* INDEX */
+    .header-container {
+        flex-direction: column; 
+    }
+
+    .logo-container {
+        padding-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .info-container {
+        text-align: center; 
+    }
+
+    .dates, .title, .cities {
+        font-size: 1.2em; 
+    }
+
+    .menu, 
+
+    .countdown-container span.text {
+        font-size: 2em; 
+        margin-right: 0; 
+    }
+
+    .countdown-container {
+        flex-direction: column; 
+    }
+
+    .logo-container {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav.menu a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .countdown {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .banner h1, .banner h2, .banner p {
+        font-size: 1.5em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        margin: 10px 0;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* SCHEDULE */
+    .artist-item {
+        width: 50%; 
+    }
+    
+    .artist-info h2 {
+        font-size: 1.5em;
+    }
+
+    .artist-info p {
+        font-size: 1em;
+    }
+
+    .artists img {
+        width: auto;
+        height: auto;
+        /* max-width: 100%; */
+    }
+
+    .ar
+
+    /* TICKETS */
+    .concert-banner {
+        padding: 30px 10px; 
+    }
+
+    .concert-banner h1 {
+        font-size: 2em; 
+    }
+
+    .concert-banner p {
+        font-size: 1.2em; 
+    }
+
+    .concert-banner h2 {
+        font-size: 1.5em; 
+    }
+
+    /* PHOTOS */
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }
+
+    .photo-grid img {
+        border-radius: 8px; 
+    }
+
+    /* ABOUT */
+    .logistics-details {
+        padding: 20px; 
+    }
+
+    .logistics-details h1 {
+        font-size: 2em; 
+    }
+
+    .logistics-details h2 {
+        font-size: 1.5em; 
+    }
+}
+
+
